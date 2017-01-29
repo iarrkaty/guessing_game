@@ -6,13 +6,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Katy SanGregory</h1>
-</header>
-  <p>
-    <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
-  </p>
-  <table style = "width:80%">
+  <table style = "width:80%" align = "center">
+    <col width = "50">
+    <col width = "50">
+    <tr>
+      <td>
+      <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
+      </td>
+      <td>
+        <h1>Katy SanGregory</h1>
+      </td>
+    </tr>
     <tr>
       <td>
         <p>
@@ -28,6 +32,7 @@
 
         I aspire to become a full time developer focusing on python.<br><br>
       </p>
+      <td rowspan="2">
         <h2> TL;DR </h2>
             <ul>
               <li> Current occupation: Dog Walker
@@ -52,11 +57,17 @@
           <li> House of Cards
           <li> Game of Thrones
         </ol>
+      </td>
         <br>
       </td>
     </tr>
+    <tr>
+      <td>
+  <center>  <button onclick = userGame()>How well do you think you know me?</button> </center>
+  </td>
+  </tr>
   </table>
   <br>
-  <button onclick = userGame()>How well do you think you know me?</button>
+
 </body>
 </html>
