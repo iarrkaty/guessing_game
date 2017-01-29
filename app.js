@@ -8,7 +8,7 @@ var answerOne = prompt('What country was I born in?');
 var myAnswerOne ='Japan';
 
 if(answerOne === myAnswerOne) {
-  alert('You got it right!')
+  alert('YAY! You got it right!')
 } else {
   alert('Sorry you got it wrong!')
 }
