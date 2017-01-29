@@ -5,18 +5,14 @@
   <title> About Me </title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+<body>
 <header>
   <h1>Katy SanGregory</h1>
 </header>
-
   <p>
-
     <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
-
   </p>
-  <div>
-  <p>
+  <main>
     I'm currently a dog walker during the day and study at Code Fellows in the evening. I was born in Yokuska
     Japan and grew up in Northeast Ohio. My family relocated to the Northwest when I was a Sophmore in high school.
     I discovered my love of technology early in my high school career and spent countless hours watching and
@@ -28,56 +24,29 @@
     my free time I enjoy long walks through record stores, tattoos, baking and science fiction.
 
     I aspire to become a full time developer focusing on python.
-  </p>
-  </div>
+
+<h2> TL;DR </h2>
+    <ul>
+      <li> Current occupation: Dog Walker
+      <li> Place of birth: Yokuska Japan
+      <li> Hometown: Tiffin, Ohio
+      <li> Previous area of study: Journalism and Graphic design
+      <li> Published in: MacWorld and The New Yorker
+    </ul>
+<h2> Favorite Shows </h2>
+<ol>
+  <li> Doctor Who
+  <li> Firefly
+  <li> Battlestar Galactica
+  <li> Star Trek
+  <li> Stargate
+  <li> Stranger Things
+  <li> Torchwood
+  <li> Pushing Daisies
+  <li> House of Cards
+  <li> Game of Thrones
+</ol>
+  </main>
   <button onclick = userGame()>How well do you think you know me?</button>
-
-</body>
-
-  <script>
-
-  function userGame() {
-
-  var userName = prompt('What\'s your name?');
-  alert('Hello ' + userName + ' Thanks for coming to my site!');
-  console.log(userName);
-
-  var answerOne = prompt('What country was I born in?');
-  var myAnswerOne ='Japan';
-
-  if(answerOne === myAnswerOne) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-
-  var answerTwo = prompt('What publications has my work been published in?');
-  var myAnswerTwo = 'New Yorker and MacWorld';
-
-  if(answerTwo === myAnswerTwo) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-
-  var answerThree = prompt('What was my first job?');
-  var myAnswerThree = 'Custom t-shirt shop';
-
-  if(answerThree === myAnswerThree) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-  var answerFour = prompt('What is my favorite show?');
-  var myAnswerFour = 'Doctor Who';
-
-  if(answerFour === myAnswerFour) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-}
-  </script>
-
 </body>
 </html>
