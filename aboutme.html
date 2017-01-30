@@ -3,81 +3,76 @@
 <html>
 <head>
   <title> About Me </title>
+  <!--Used css to style page -->
   <link rel="stylesheet" href="style.css">
+ <script src="app.js"></script>
 </head>
+<body>
+  <table style = "width:80%" align = "center">
+    <col width = "50">
+    <col width = "50">
+    <tr>
+      <td>
+      <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
+      </td>
+      <td>
+        <h1>Katy SanGregory</h1>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <p>
+        I'm currently a dog walker during the day and study at Code Fellows in the evening. I was born in Yokuska
+        Japan and grew up in Northeast Ohio. My family relocated to the Northwest when I was a Sophmore in high school.
+        I discovered my love of technology early in my high school career and spent countless hours watching and
+        rewatching episodes of Screen Savers on TechTV. I focused on graphic design in high school and got a job at a
+        custom t-shirt shop to refine my skills shortly after graduation.<br><br>
 
-<header>
-  <h1>Katy SanGregory</h1>
-</header>
+        My love of technology continued through college where I focused on Journalism and Graphic design. My graphic design work
+        has been published in The New Yorker and MacWorld as well as a number of small newspapers on the Olympic Peninsula. In
+        my free time I enjoy long walks through record stores, tattoos, baking and science fiction.<br><br>
 
-  <p>
-
-    <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
-
-  </p>
-  <div>
-  <p>
-    I'm currently a dog walker during the day and study at Code Fellows in the evening. I was born in Yokuska
-    Japan and grew up in Northeast Ohio. My family relocated to the Northwest when I was a Sophmore in high school.
-    I discovered my love of technology early in my high school career and spent countless hours watching and
-    rewatching episodes of Screen Savers on TechTV. I focused on graphic design in high school and got a job at a
-    custom t-shirt shop to refine my skills shortly after graduation.
-
-    My love of technology continued through college where I focused on Journalism and Graphic design. My graphic design work
-    has been published in The New Yorker and MacWorld as well as a number of small newspapers on the Olympic Peninsula. In
-    my free time I enjoy long walks through record stores, tattoos, baking and science fiction.
-
-    I aspire to become a full time developer focusing on python.
-  </p>
-  </div>
-  <button onclick = userGame()>How well do you think you know me?</button>
-
-</body>
-
-  <script>
-
-  function userGame() {
-
-  var userName = prompt('What\'s your name?');
-  alert('Hello ' + userName + ' Thanks for coming to my site!');
-  console.log(userName);
-
-  var answerOne = prompt('What country was I born in?');
-  var myAnswerOne ='Japan';
-
-  if(answerOne === myAnswerOne) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-
-  var answerTwo = prompt('What publications has my work been published in?');
-  var myAnswerTwo = 'New Yorker and MacWorld';
-
-  if(answerTwo === myAnswerTwo) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-
-  var answerThree = prompt('What was my first job?');
-  var myAnswerThree = 'Custom t-shirt shop';
-
-  if(answerThree === myAnswerThree) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-  var answerFour = prompt('What is my favorite show?');
-  var myAnswerFour = 'Doctor Who';
-
-  if(answerFour === myAnswerFour) {
-    alert('You got it right!')
-  } else {
-    alert('Sorry you got it wrong!')
-  }
-}
-  </script>
+        I aspire to become a full time developer focusing on python.<br><br>
+      </p>
+      <td rowspan="2">
+        <!-- Include unordered list -->
+        <h2> TL;DR </h2>
+            <ul>
+              <li> Current occupation: Dog Walker
+              <li> Place of birth: Yokuska Japan
+              <li> Date of birth: 5/5/1988
+              <li> Hometown: Tiffin, Ohio
+              <li> Previous area of study: Journalism and Graphic design
+              <li> Published in: MacWorld and The New Yorker
+              <li> Hobbies: Record collecting and baking
+            </ul>
+            <br>
+        <!-- Top ten list/ ordered list -->
+        <h2> Favorite Shows </h2>
+        <ol>
+          <li> Doctor Who
+          <li> Firefly
+          <li> Battlestar Galactica
+          <li> Star Trek
+          <li> Stargate
+          <li> Stranger Things
+          <li> Torchwood
+          <li> Pushing Daisies
+          <li> House of Cards
+          <li> Game of Thrones
+        </ol>
+      </td>
+        <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+  <center>  <button onclick = userGame()>How well do you think you know me?</button> </center>
+  </td>
+  </tr>
+  </tr>
+  </table>
+  <br>
 
 </body>
 </html>
