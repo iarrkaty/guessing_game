@@ -8,19 +8,9 @@
  <script src="app.js"></script>
 </head>
 <body>
-  <table style = "width:80%" align = "center">
-    <col width = "50">
-    <col width = "50">
-    <tr>
-      <td>
       <img src = "./Images/oldnew.jpg" alt = "Old photo vs new photo" />
-      </td>
-      <td>
-        <h1>Katy SanGregory</h1>
-      </td>
-    </tr>
-    <tr>
-      <td>
+  <h1>Katy SanGregory</h1>
+    <div>
       <p>
         I'm currently a dog walker during the day and study at Code Fellows in the evening. I was born in Yokuska
         Japan and grew up in Northeast Ohio. My family relocated to the Northwest when I was a Sophmore in high school.
@@ -34,8 +24,9 @@
 
         I aspire to become a full time developer focusing on python.<br><br>
       </p>
-      <td rowspan="2">
+    </div>
         <!-- Include unordered list -->
+    <div id="list1">
         <h2> TL;DR </h2>
             <ul>
               <li> Current occupation: Dog Walker
@@ -46,8 +37,9 @@
               <li> Published in: MacWorld and The New Yorker
               <li> Hobbies: Record collecting and baking
             </ul>
-            <br>
+      </div>
         <!-- Top ten list/ ordered list -->
+      <div id="list2">
         <h2> Favorite Shows </h2>
         <ol>
           <li> Doctor Who
@@ -61,17 +53,8 @@
           <li> House of Cards
           <li> Game of Thrones
         </ol>
-      </td>
-        <br>
-      </td>
-    </tr>
-    <tr>
-      <td>
+      </div>
   <center>  <button onclick = userGame()>How well do you think you know me?</button> </center>
-  </td>
-  </tr>
-  </tr>
-  </table>
   <br>
 
 </body>

@@ -1,6 +1,6 @@
 function userGame() {
 //Tally counter
-var right, wrong; right = wrong = 0
+var counter = 0
 
 //Five questions covering a variety of information about me
 var userName = prompt('What\'s your name?');
@@ -13,10 +13,10 @@ var myAnswerOne ='Japan';
 console.log(answerOne);
 
 if(answerOne === myAnswerOne) {
-  right++
+  counter++;
   alert('You got it right!')
 } else {
-  wrong++
+  counter++;
   alert('Sorry you got it wrong!')
 }
 
@@ -25,10 +25,10 @@ var myAnswerTwo = 'New Yorker' && 'MacWorld';
 console.log(answerTwo);
 
 if(answerTwo === "New Yorker" || answerTwo === "MacWorld") {
-  right++
+  counter++;
   alert('You got it right!')
 } else {
-  wrong++
+  counter++;
   alert('Sorry you got it wrong!')
 }
 
@@ -37,10 +37,10 @@ var myAnswerThree = 'Custom t-shirt shop';
 console.log(answerThree);
 
 if(answerThree === myAnswerThree) {
-  right++
+  counter++;
   alert('You got it right!')
 } else {
-  wrong++
+  counter++;
   alert('Sorry you got it wrong!')
 }
 var answerFour = prompt('What is my favorite show?');
@@ -48,26 +48,30 @@ var myAnswerFour = 'Doctor Who';
 console.log(answerFour);
 
 if(answerFour === myAnswerFour) {
-  right++
+  counter++;
   alert('You got it right!')
 } else {
-  wrong++
+  counter++;
   alert('Sorry you got it wrong!')
 }
 //Question with multiple correct answers
-  var wrongSix; wrong = 0
+
+  var wrongSix = 0
 while (wrongSix <= 6) {
   var answerFive = prompt('What do I collect?');
   var myAnswerFive = ['Records' , 'Tattoos' , 'Cookbooks'];
   console.log(answerFive);
   if (myAnswerFive.indexOf(answerFive) > -1){
-    right++
+    counter++;
     alert('You got it right!')
+    { break; }
   } else {
-    wrong++
+    wrongSix++;
+    counter++;
     alert('Sorry you got it wrong!')
   }
 }
+
 //Question using numeric input
 var answerSix = prompt('How old am I?');
 var myAnswerSix = '28';
@@ -78,5 +82,6 @@ if (answerSix < 28) {
   alert('Sorry too high!')
 } else {
   alert ('You\'re right - I\'m 28!')
+  counter++;
 }
 }
