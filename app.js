@@ -64,10 +64,9 @@ while (wrongSix <= 6) {
   if (myAnswerFive.indexOf(answerFive) > -1){
     counter++;
     alert('You got it right!')
-    { break; }
+      break;
   } else {
     wrongSix++;
-    counter++;
     alert('Sorry you got it wrong!')
   }
 }
@@ -84,4 +83,5 @@ if (answerSix < 28) {
   alert ('You\'re right - I\'m 28!')
   counter++;
 }
+  alert('Congratulations ' + userName + ' you got ' + counter + ' out of seven questions correct!');
 }
