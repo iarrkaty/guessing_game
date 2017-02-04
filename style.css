@@ -7,20 +7,20 @@ main {
 }
 body {
   text-align: center;
-  font-family: 'Anton', sans-serif;
+  font-family: sans-serif;
 }
 h1 {
   font-size: 40px;
-  font-family: 'Anton', sans-serif;
-  color: white;
+  font-family: 'Merienda One', cursive;
+  color: rgba(53,169,180,1)
 }
 div {
-  height: absolute;
-  width: 500px;
-  background-color: #e1ddda;
-  padding: 10px;
-  margin: 10px;
-  text-align: center;
+    height: 40%;
+    width: 50%;
+    background-color: #e1ddda;
+    padding: 2%;
+    margin: 2% 25% 2% 25%;
+    text-align: center;
 }
 #list1 . article {
   margin: 2px;
@@ -39,7 +39,6 @@ ol {
   list-style: none;
 }
 img {
-  float: left
   border: 5px solid black;
   border-radius: 10px;
   padding: 1px;
