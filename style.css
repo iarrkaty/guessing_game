@@ -5,9 +5,13 @@ main {
     background-color: white;
     white-space: pre-line;
 }
+body {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+}
 h1 {
   font-size: 40px;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Anton', sans-serif;
   color: white;
 }
 div {
@@ -26,12 +30,11 @@ div {
 }
 ul {
   margin: 2px
+  list-style: none;
 }
 ol {
   margin: 2px
-}
-body {
-  text-align: center;
+  list-style: none;
 }
 img {
   float: left
